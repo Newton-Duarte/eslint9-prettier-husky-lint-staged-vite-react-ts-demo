@@ -1,1 +1,10 @@
-pnpm pre-commit
+echo '🏗️👷 Styling and testing your project before committing'
+
+pnpm pre-commit ||
+(
+        echo '😤🏀👋😤 shit... ESLint automatic fix failed 😤🏀👋😤
+              Make the required changes listed'
+        false;
+)
+
+echo '✅ Oh! Congratulations, all good bro! ✅'
