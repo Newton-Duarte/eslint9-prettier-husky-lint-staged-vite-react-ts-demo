@@ -2,7 +2,7 @@ echo '🏗️👷 Building your project before push'
 
 echo "🤔 Let's check!... Trying to build now."
 
-pnpm build ||
+pnpm pre-push ||
 (
     echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
             Vite build failed: View the errors above to see why.

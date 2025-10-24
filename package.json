@@ -13,6 +13,7 @@
     "format": "pnpm prettier && pnpm lint:fix",
     "prepare": "husky",
     "pre-commit": "lint-staged",
+    "pre-push": "pnpm build",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
