@@ -28,7 +28,6 @@ export default defineConfig([
       'react/react-in-jsx-scope': 'off',
       'prettier/prettier': 'error',
       '@typescript-eslint/no-unused-vars': 'error',
-      '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
     },
     languageOptions: {
