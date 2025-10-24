@@ -1,1 +1,13 @@
-pnpm build
+echo '🏗️👷 Building your project before push'
+
+echo "🤔 Let's check!... Trying to build now."
+
+pnpm build ||
+(
+    echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
+            Vite build failed: View the errors above to see why.
+    '
+    false;
+)
+
+echo "✅ All good! Let's push this art"
